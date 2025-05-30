@@ -1,12 +1,14 @@
 const pasos = document.querySelectorAll("span[data-step");
-const progreso = document.querySelector("relleno");
+const progreso = document.querySelector(".relleno");
 const steps = pasos.length;
+
+console.log("barra.js está cargado");
 
 for (const item of pasos) {
   item.addEventListener("click", () => {
     const currentStep = parseInt(item.dataset.step);
 
-    item.forEach((element) => {
+    pasos.forEach((element) => {
       const num = parseInt(element.dataset.step);
       const li = element.parentElement;
       const titulo = li.querySelector("h4");
