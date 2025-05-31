@@ -9,8 +9,28 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: #232a70;
 }
+
+.page {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.home {
+  display: inline-block;
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  color: #51cdbe;
+  font-size: 20px;
+}
+
 .container {
-  margin: 300px auto;
   width: 700px;
   height: 150px;
   border-radius: 20px;
