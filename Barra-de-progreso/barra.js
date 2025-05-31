@@ -1,8 +1,6 @@
-const pasos = document.querySelectorAll("span[data-step");
+const pasos = document.querySelectorAll("span[data-step]");
 const progreso = document.querySelector(".relleno");
 const steps = pasos.length;
-
-console.log("barra.js está cargado");
 
 for (const item of pasos) {
   item.addEventListener("click", () => {
